@@ -1,0 +1,244 @@
+/* 全局样式 */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "微软雅黑";
+	/* 默认设置为1rem=16px */
+	font-size: 0.875rem;
+	margin: 0;
+	line-height: 1.8;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* 超小屏幕 576px */
+
+/* 头部区域样式 */
+header {
+	width: 85%;
+	margin: 10px auto;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li a {
+	color: #337ab7;
+}
+
+.navbar form {
+	display: flex;
+}
+
+.navbar input {
+	height: 25px;
+	border-radius: 42px;
+	border: 1px solid #c0c0c0;
+	flex-grow: 1;
+}
+
+.navbar button {
+	border: 1px solid #C0C0C0;
+	outline: none;
+	cursor: pointer;
+}
+
+.navbar button:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #337ab7;
+	font-size: 1rem;
+}
+
+/* main区域 */
+.section_header {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	background: url(../img/section-header.png) no-repeat center;
+}
+
+.section_header h1 {
+	font-size: 1.875rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+
+.about div:nth-child(1) {
+	display: flex;
+	justify-content: center;
+}
+
+.about div:nth-child(2) {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.about h2 {
+	margin: 10px 0;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.about p {
+	color: #7f7f7f;
+	font-size: 1rem;
+}
+
+.jing {
+	display: flex;
+	flex-direction: column;
+}
+
+.event {
+	width: 400px;
+	margin: 0 auto 15px;
+}
+
+.jing ul {
+	background-color: #dcdcdc;
+	padding: 30px 20px;
+	color: #666;
+	/* margin-top: 0; */
+}
+
+.jing ul i {
+	color: #0099cc;
+	margin-right: 15px;
+}
+
+/* footer区域 */
+footer {
+	height: 170px;
+	/* 垂直居中 */
+	display: flex;
+	align-items: center;
+}
+
+footer a {
+	color: #337AB7;
+}
+
+footer ul li a {
+	font-size: 0.75rem;
+}
+
+footer div {
+	width: 85%;
+	margin: 0 auto;
+}
+
+footer ul {
+	display: flex;
+}
+
+footer ul li a {
+	padding: 0 10px;
+}
+
+footer div p {
+	display: flex;
+	/* 设置两端对齐 */
+	justify-content: space-between;
+}
+
+/* 小屏幕 768px */
+@media (min-width:768px) {
+	header {
+		width: 90%;
+	}
+	
+	nav ul {
+		display: flex;
+		margin-left: 1rem;
+	}
+	
+	nav ul li a {
+		padding: 0 1rem;
+	}
+	
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.navbar form {
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	
+	.jing {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+/* 中屏幕 992px */
+@media (min-width: 992px) {
+	header {
+		display: flex;
+	}
+	
+	.navbar {
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.navbar form {
+		width: auto;
+		margin: 0;
+	}
+	
+	.navbar input {
+		/* flex-grow: 0; */
+	}
+
+	main{
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.about {
+		display: flex;
+	}
+	
+	.about div {
+		flex: 1;
+	}
+	
+	.about div:nth-child(1) {
+		justify-content: left;
+	}
+	
+	.event {
+		width: 350px;
+	}
+
+}

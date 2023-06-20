@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+    /* box-sizing: border-box; */
+    list-style: none;
+    text-decoration: none;
+    font-weight: bolder;
+    /*filter: grayscale(100%);*//* 网站变灰,不变为1*/
+    /* filter:blur(2px); 模糊 */
+}
+
+/* div{
+    border: 1px solid #333;
+} */
+/* .Menu{
+    float: left;
+    margin: 5px;
+    background-color: aqua;
+} */
+
+/* 可以修bug的小彩蛋 */
+.beihou-bu{
+    width: 100%;
+    height: 300px;
+    background-color: #1e5f9f;
+    position: fixed;
+    top: 0px;
+}
+.beihou-bu p{
+    text-align: center;
+    line-height: 300px;
+    font-size: 46px;
+    color: aqua;
+    text-shadow:0 0 20px aqua;
+
+}
+
+.whole{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    /* top: -62px; */
+}
+.fou-dong{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+        top: -60px;
+    z-index: 9;
+    transition:all .4s;
+
+}
+.top-div{
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(240, 240, 240,0.8);
+    overflow: hidden;
+}
+.top-div h2{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    padding-left: 20px;
+
+}
+/* .log{
+    width: 320px;
+} */
+/* .function{
+    width: 300px;
+
+} */
+.function ul{
+    list-style: none;
+    color: rebeccapurple;
+    
+
+}
+.teshu1{
+    color: rebeccapurple;
+}
+.teshu1:hover{
+    color:rgb(200, 10, 10);
+}
+.function li{
+    line-height: 62px;
+    padding-right: 20px;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    
+    
+}
+.function .hexing li{
+    padding-left: 20px;
+    transition:all .4s;
+    
+}
+.hexing a,.yoghu a{
+    display: inline-block;
+    height: 60px;
+    /* transition:all .4s */
+}
+.hexing a:hover{
+    background-color:#f8cd32 ;
+}
+.hexing a:hover .xia-hua{
+    width: 80%;
+    
+}
+.hexing a{
+    /* background-color: rgb(240, 240, 240,0.6); */
+    transition:all .6s;
+}
+a:hover li{
+    color:rgb(200, 10, 10);
+}
+.hexing a:hover li{
+    color:rgb(220, 10, 10) ;
+    top: -6px ;
+}
+.xia-hua{
+    margin: auto;
+    width: 0px;
+    height: 4px;
+    background-color: #333;
+    transition:all 1s
+}
+
+
+/* 首页轮播图 */
+.imgbox{
+    position: relative;
+    top: -60px;
+    
+}
+.shell{
+    width: 100%;
+    height:750px;
+    position: relative;
+    overflow: hidden;
+    
+    /* border-radius: 5px; */
+}
+.images{
+    width: 200%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .4s;
+    height:auto;
+    bottom: 0px;
+}
+
+.images div{
+    width: 100%;
+}
+
+/* 首页动画 */
+.index-dong{
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 360px;
+    color: white;
+    
+}
+.index-dong:hover{
+    text-shadow:0 0 8px #f3ed3d;
+}
+.index-dong p {
+    display: inline-block;
+    font-size: 100px;
+    transition:all 1s;
+}
+.index-dong #tan {
+    position: relative;
+    left: 800px;
+
+}
+.index-dong #suo {
+    position: relative;
+    right: 800px;
+}
+.index-dong #shijie {
+    font-size: 120px;
+    position: relative;
+    text-align: center;
+    top: 400px;
+
+    transition:all 1.8s;
+}
+
+/*  */
+.guodu{
+    padding-top: 25px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+.guodu h3{
+    position: relative;
+    top: -122px;
+    left: 72px;
+    Letter-spacing: 5px;
+}
+.guodu span{
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+}
+/* 中部 */
+.diimg{
+    background: url('../image/bacimg.jpg');
+    position: relative;
+    height: 500px;
+}
+.diimg2{
+    background: url('../image/首-风景背.jpg') 100%;
+    position: relative;
+    height: 500px;
+}
+.henx-neir{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+
+}
+.h2{
+    color: white;
+    line-height: 50px;
+}
+.font p {
+    width: 500px;
+    font-size: 18px;
+    color: white;
+    Line-height:34px;
+    Text-indent:2em;
+}
+.leftimg{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+
+}
+.hh1{
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    text-shadow:0 0 20px #ffffff;
+}
+.hh2{
+    font-size: 24px;
+    text-align: center;
+    color:#0145ff;
+}
+.xia-zhong{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.xia-zhong img:nth-child(2){
+    position: relative;
+    top: 100px;
+}
+.xia-zhong img:hover{
+    /* 插入动画 */
+    animation-name: img-jitter;
+    animation-duration: .4s;
+}
+.kong{
+    height: 150px;
+}
+.ba{
+    width: 100%;
+    background: url('../image/底部.jpg');
+    position: relative;
+    top: 6px;
+}
+.wei{
+    width: 1000px;
+    height: 190px;
+    margin: auto;
+    display: flex;
+}
+.dibu{
+    height: 160px;
+    border-left: 1px solid beige;
+    padding: 8px 2px;
+    margin: 10px;
+    color: white;
+}
+.dibu:nth-child(1){
+    border-left: 20px;
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    height: 100px;
+}
+.dibu:nth-child(2){
+    width: 350px;
+    padding-left: 10px;
+    padding-top: 0px;
+    
+}
+.dibu:nth-child(3){
+    width: 350px;
+    padding-left: 10px;
+}
+.dibu td{
+    font-size: 8px;
+    color: white;
+    opacity: 0.9;
+    padding-right: 20px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+.dibu .fen{
+    width: 160px;
+    display: inline-block;
+}
+
+.footer p{
+    text-align: center;
+    background-color: #153c5f;
+    color: aliceblue;
+}
+.fen img:hover{
+    box-shadow:0 0 10px #f3ed3d;
+
+}
+
+/* 动画 */
+@keyframes img-jitter {
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(7deg);}
+    50% {transform:rotate(-7deg);}
+    75% {transform:rotate(7deg);}
+    100% {transform:rotate(0deg);}
+  }
+
+
+  /* 登入注册 */
